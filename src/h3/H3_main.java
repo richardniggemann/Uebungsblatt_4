@@ -2,8 +2,8 @@ package h3;
 
 public class H3_main {
     public static void main(String[] args) {
-        float celsiusFloat = 0, fahrenheitFloat = 0;
-        double celsiusDouble = 1.0, fahrenheitDouble = 1.0;
+        float celsiusFloat = 14.2f, fahrenheitFloat = 0f;
+        double celsiusDouble = 14.2d, fahrenheitDouble = 0d;
 
         fahrenheitFloat = celsiusToFahrenheit(celsiusFloat);
         fahrenheitDouble = celsiusToFahrenheit(celsiusDouble);
@@ -15,10 +15,10 @@ public class H3_main {
     }
 
     public static float celsiusToFahrenheit(float celsiusFloat) {
-        return celsiusFloat * 9 / 5 + 32;
+        return celsiusFloat * (float) 9 / (float) 5 + (float) 32;
     }
 
     public static double celsiusToFahrenheit(double celsiusDouble) {
-        return celsiusDouble * 9 / 5 + 32;
+        return celsiusDouble * (double) 9 / (double) 5 + (double) 32;
     }
 }
