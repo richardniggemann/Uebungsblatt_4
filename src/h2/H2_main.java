@@ -14,7 +14,7 @@ public class H2_main {
 
         a = eigenschaft1 && eigenschaft2;
         b = eigenschaft1 || eigenschaft3;
-        c = (x && !y) || (!x && !y);
+        c = !y;
 
         System.out.println("x: " + x);
         System.out.println("y: " + y);
